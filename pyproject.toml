@@ -1,0 +1,19 @@
+[project]
+name = "aicg3d-flashvsr"
+description = "FlashVSR 视频超分辨率放大 ComfyUI 加速节点（AICG3D 整理版）"
+readme = "README.md"
+keywords = ["FlashVSR", "视频超分", "视频放大", "ComfyUI", "AICG3D"]
+version = "1.0.0"
+license = {text = "Apache-2.0"}
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/JGRFW/comfyui-AICG3D-FlashVSR"
+
+[tool.comfy]
+PublisherId = "aicg3d"
+DisplayName = "AICG3D FlashVSR"
+Icon = ""
+
+[project.license-files]
+include = ["LICENSE", "THIRD_PARTY_NOTICES.md"]
