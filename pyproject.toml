@@ -16,4 +16,4 @@ DisplayName = "AICG3D FlashVSR"
 Icon = ""
 
 [project.license-files]
-include = ["LICENSE", "THIRD_PARTY_NOTICES.md"]
+include = ["LICENSE", "THIRD_PARTY_NOTICES.md", "third_party/*.txt"]
