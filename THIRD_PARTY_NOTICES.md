@@ -6,7 +6,7 @@
 |---|---|---|---|
 | 原 "TE-Speed" 系列插件（本插件的来源） | 全部加速实现与节点骨架 | **yun** | 原发行版未附带许可证文件，亦未声明授权条款 |
 | FlashVSR（含 `flashvsr_core/` 内的实现） | 视频超分辨率推理管线；本插件在其基础上加入执行预算控制、运动感知动态加速等 | OpenImagingLab | Apache-2.0（见 `flashvsr_core/LICENSE.txt`） |
-| [SpargeAttn](https://github.com/thu-ml/SpargeAttn)（`spas_sage_attn` 轮子） | 视频超分的稀疏注意力后端，**本仓库附带该轮子**（`wheels/`） | thu-ml 等 | BSD-3-Clause（原文见 `third_party/spas_sage_attn_LICENSE.txt`） |
+| [SpargeAttn](https://github.com/thu-ml/SpargeAttn)（`spas_sage_attn` 轮子） | 视频超分的稀疏注意力后端，**本仓库附带该轮子**（`wheels/`） | thu-ml 等 | 上游元数据标注 BSD-3-Clause，轮子内**实际附带的是 Apache-2.0 原文**（已保留于 `third_party/spas_sage_attn_LICENSE.txt`） |
 | [ComfyUI](https://github.com/comfyanonymous/ComfyUI) | 运行宿主（本仓库不含其代码） | comfyanonymous 等 | GPL-3.0 |
 
 ## 关于二进制组件

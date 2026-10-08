@@ -43,7 +43,7 @@ wheels/spas_sage_attn-0.1.0+cu130torch2.9.0andhigher.post4-cp39-abi3-win_amd64.w
 
 - 该轮子对应 **CUDA 13.0 + torch ≥ 2.9.0**，`cp39-abi3`（Python 3.9 及以上通用，含 3.13）。
 - 环境不匹配时安装会失败，请到上游 `thu-ml/SpargeAttn` 自行编译（编译需要 CUDA 工具链，比较耗时）。
-- 该轮子由 SpargeAttn 项目构建，许可证：BSD 3-Clause License（详见其上游仓库）。
+- 该轮子由 SpargeAttn 项目构建。注意：其元数据标注为 BSD-3-Clause，而轮子内实际附带的许可证原文是 **Apache-2.0**——两种信息都已如实保留（原文见 `third_party/spas_sage_attn_LICENSE.txt`）。
 
 ## 节点
 
