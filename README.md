@@ -20,7 +20,30 @@ cd ComfyUI/custom_nodes
 git clone https://github.com/JGRFW/comfyui-AICG3D-FlashVSR.git
 ```
 
-依赖：Python 3.12+、`spas_sage_attn` 轮子（原作者提供下载）；FlashVSR 模型权重**不随仓库分发**。
+依赖：Python 3.12+、`spas_sage_attn`（仓库已附带对应轮子，见下文「依赖安装」）；FlashVSR 模型权重**不随仓库分发**。
+
+
+## 依赖安装（重要）
+
+本插件依赖 **spas_sage_attn**（SpargeAttn 的预编译轮子）。它**不在 PyPI 上**，
+所以本仓库直接附带了与原插件作者分发版本一致的轮子：
+
+```text
+wheels/spas_sage_attn-0.1.0+cu130torch2.9.0andhigher.post4-cp39-abi3-win_amd64.whl
+```
+
+**安装方法**（在插件目录下执行）：
+
+```bash
+# Windows：用你 ComfyUI 环境的 python
+"路径/到/ComfyUI/python.exe" -m pip install -r requirements.txt
+# 或者直接指定轮子
+"路径/到/ComfyUI/python.exe" -m pip install wheels/spas_sage_attn-0.1.0+cu130torch2.9.0andhigher.post4-cp39-abi3-win_amd64.whl
+```
+
+- 该轮子对应 **CUDA 13.0 + torch ≥ 2.9.0**，`cp39-abi3`（Python 3.9 及以上通用，含 3.13）。
+- 环境不匹配时安装会失败，请到上游 `thu-ml/SpargeAttn` 自行编译（编译需要 CUDA 工具链，比较耗时）。
+- 该轮子由 SpargeAttn 项目构建，许可证：BSD 3-Clause License（详见其上游仓库）。
 
 ## 节点
 

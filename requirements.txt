@@ -1,0 +1,12 @@
+# AICG3D-FlashVSR 依赖
+#
+# 本插件需要 spas_sage_attn（SpargeAttn 的预编译轮子），它不在 PyPI 上。
+# 仓库内已附带与本插件同环境匹配的轮子：
+#   wheels/spas_sage_attn-0.1.0+cu130torch2.9.0andhigher.post4-cp39-abi3-win_amd64.whl
+#
+# 在插件目录下执行：
+#   "<ComfyUI 的 python.exe>" -m pip install -r requirements.txt
+#
+# 该轮子对应 CUDA 13.0 + torch >= 2.9.0（cp39-abi3，Python 3.9+ 通用）。
+# 如果你的环境不匹配，请到上游自行编译：https://github.com/thu-ml/SpargeAttn
+./wheels/spas_sage_attn-0.1.0+cu130torch2.9.0andhigher.post4-cp39-abi3-win_amd64.whl
